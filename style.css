@@ -19,8 +19,8 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   background:
-    linear-gradient(rgba(11, 31, 58, 0.7), rgba(11, 31, 58, 0.7)),
-    url("img/spacebg.jpg") center / cover fixed no-repeat;
+  linear-gradient(rgba(11, 31, 58, 0.7), rgba(11, 31, 58, 0.7)), 
+  url('img/spacebg.jpg') no-repeat center center fixed;
   color: var(--white-cards);
   min-height: 100vh;
   padding: 20px;
@@ -40,6 +40,13 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.site-header img{
+  width: 200px;
+  height: auto;
+  margin-right: 15px;
 }
 
 h1 {
@@ -107,6 +114,8 @@ button:focus {
 .facth2 {
   text-align: center;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
 .space-fact{
@@ -114,19 +123,21 @@ button:focus {
   margin: 20px;
   padding: 22px 30px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 50px;
   color: var(--white-cards);
   background: linear-gradient(135deg, var(--deep-navy), var(--nasa-blue));
   border: 3px solid var(--white-cards);
   box-shadow: 0 0 0 4px var(--red-accent), 0 8px 20px rgba(0, 0, 0, 0.4);
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
+  text-transform: uppercase;
   line-height: 1.5;
   text-shadow: 0 2px 3px var(--deep-navy);
   animation: fact-glow 3s ease-in-out infinite;
-  max-width: 60%;
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto;
+  height: 150px;
 }
 
 .space-fact::before {
@@ -322,11 +333,14 @@ a gallery item. */
 .site-footer {
   margin-top: 20px;
   padding: 25px;
-  border-top: 4px solid var(--nasa-blue);
+  /* border-top: 4px solid var(--nasa-blue); */
   border-radius: 8px;
   color: var(--white-cards);
   background-color: rgba(11, 31, 58, 0.95);
   line-height: 1.6;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-footer h2,
@@ -351,4 +365,24 @@ a gallery item. */
 
 .site-footer a:hover {
   color: var(--red-accent);
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.footer-links a {
+  color: var(--white-cards);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-logo{
+  width: 150px;
+  height: auto;
+  margin-bottom: 5px;
 }
