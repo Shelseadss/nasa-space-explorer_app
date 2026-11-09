@@ -16,8 +16,15 @@
     <div class="filters">
       <input type="date" id="startDate" />
       <input type="date" id="endDate" />
-      <button>Get Space Images</button>
+      <button id="getImagesButton" type="button">Get Space Images</button>
     </div>
+
+    <div class="facth2">
+      <h2>Did You Know?</h2>
+    </div>
+    
+    <section id="spaceFact" class="space-fact">
+    </section>
 
     <div id="gallery" class="gallery">
       <div class="placeholder">
@@ -25,6 +32,36 @@
         <p>Select a date range and click "Get Space Images" to explore the cosmos!</p>
       </div>
     </div>
+
+    <div id="imageModal" class="modal hidden">
+      <div class="modal-content">
+        <button id="closeModal" class="close-button" type="button" aria-label="Close image details">×</button>
+        <div id="modalMedia"></div>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDate"></p>
+        <p id="modalExplanation"></p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <h2>Background Image</h2>
+      <h3>Views of the extravehicular activity during STS 41-B</h3>
+      <p><strong>NASA ID:</strong> S84-27031</p>
+      <p>
+        Astronaut Bruce McCandless II reaches a maximum distance from the
+        Challenger during the first untethered spacewalk using the manned
+        maneuvering unit (MMU).
+      </p>
+      <p><strong>Date Created:</strong> 1984-02-12</p>
+      <p><strong>Center:</strong> JSC</p>
+      <p>
+        <strong>Keywords:</strong> Astronauts, Challenger, crew procedures,
+        extravehicular activity, MMU, Space Shuttle Mission 41-B
+      </p>
+      <a href="https://www.nasa.gov/centers/johnson/home/index.html" target="_blank" rel="noopener noreferrer">
+        Visit the JSC website
+      </a>
+    </footer>
   </div>
 
   <script src="js/dateRange.js"></script>
